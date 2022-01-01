@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerala IOT Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="pagehead">
+     <h1 class="project">Kerala IOT Challenge</h1>
+     </header>
+    <br>
+
+    <div class="content">
+        <h2>About Me</h2>
+        <p>Hey, I'm Anandhu S. I'm studying Electronics & Communication Engineering in Sree
+        Buddha College Of Engineering, Pattoor. I have a kean interest in making electronic 
+        projects & Coding. I love to try new things.       
+        </p>
+        </div>
+        <br>
+
+    <div class="content">
+        <h1 style="color:darkblue"> Level 1 Experiments</h1>
+    </div>
+    <br>
+
+    
+    <!--Html tags for Experiment 1-->
+    <div class="content">
+        <h2><u>Experiment - 1</u></h2>
+        <br>
+        <h2 style="color:crimson">Hello World LED Blinking</h2>
+        <h3 >Components Required : </h3>
+        
+        <ul list="list-style-type:disc;">
+            <li>Arduino UNO Board</li>
+            <li>Breadboard</li>
+            <li>Led (any color) - 1 </li>
+            <li>Resistor (220ohm) - 1 </li>
+            <li>Jumper wires</li>
+          </ul>
+        
+    </div>
+    <br>
+    <h2 class="content" >Circuit Diagram</h2>
+    <div class="border">
+        <image src="images/hello world led blinking.jpg " alt="Led blinking " width="500" height="500" />
+    </div>
+    <br>
+
+    <h2 class="content">Code</h2>
+
+    <p class="h1" >
+        int ledPin = 10; // define digital pin 10. <br>
+        void setup()<br>
+        { <br>
+        pinMode(ledPin, OUTPUT);// define pin with LED connected as output. <br>
+        }<br>
+        void loop()<br>
+        { <br>
+        digitalWrite(ledPin, HIGH); // set the LED on.<br>
+        delay(1000); // wait for a second.<br>
+        digitalWrite(ledPin, LOW); // set the LED off.<br>
+        delay(1000); // wait for a second<br>
+        }
+    </p>
+    <br>
+
+    <div>
+        <h2 class="content">Output/Working</h2>
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/DknTKhgB-K0" title="YouTube video player" frameborder="0" allow="accelerometer;
+         clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <br>
+
+
+
+   
+    <!--Html tags for Experiment 2-->
+    <div class="content">
+        <h2><u>Experiment - 2</u></h2>
+        <br>
+        <h2 style="color:crimson">Traffic Light</h2>
+        <h3 >Components Required : </h3>
+        
+        <ul list="list-style-type:disc;">
+            <li>Arduino UNO Board</li>
+            <li>Breadboard</li>
+            <li>Led (Red color) - 1 </li>
+            <li>Led (Yellow color) - 1 </li>
+            <li>Led (Green color) - 1 </li>
+            <li>Resistor (220ohm) - 3 </li>
+            <li>Jumper wires</li>
+          </ul>
+          
+        
+    </div>
+
+    <br>
+    <h2 class="content" >Circuit Diagram</h2>
+    <div class="border">
+        <image src="images/Traffic light.jpg " alt="Traffic light" width="500" height="500" />
+    </div>
+    <br>
+
+    <h2 class="content">Code</h2>
+
+    <p class="h1" >
+        int redled =11; // initialize digital pin 11.<br>
+        int yellowled =12; // initialize digital pin 12.<br>
+        int greenled =13; // initialize digital pin 13.<br>
+        void setup()<br>
+        {<br>
+        pinMode(redled, OUTPUT);// set the pin with red LED as “output”<br>
+        pinMode(yellowled, OUTPUT); // set the pin with yellow LED as “output”<br>
+        pinMode(greenled, OUTPUT); // set the pin with green LED as “output”<br>
+        }<br>
+        void loop()<br>
+        {<br>
+        digitalWrite(greenled, HIGH);//// turn on green LED<br>
+        delay(5000);// wait 5 seconds<br>
+        <br>
+        digitalWrite(greenled, LOW); // turn off green LED<br>
+        for(int i=0;i<3;i++)// blinks for 3 times<br>
+        {<br>
+        delay(500);// wait 0.5 second<br>
+        digitalWrite(yellowled, HIGH);// turn on yellow LED<br>
+        delay(500);// wait 0.5 second<br>
+        digitalWrite(yellowled, LOW);// turn off yellow LED<br>
+        } <br>
+        delay(500);// wait 0.5 second<br>
+        digitalWrite(redled, HIGH);// turn on red LED<br>
+        delay(5000);// wait 5 seconds<br>
+        digitalWrite(redled, LOW);// turn off red LED<br>
+        }<br>
+    </p>
+    <br>
+
+    <div>
+        <h2 class="content">Output/Working</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/xH7P_Sw8QPY" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <!--Html tags for Experiment 3-->
+    <div class="content">
+        <h2><u>Experiment - 3</u></h2>
+        <br>
+        <h2 style="color:crimson">LED Chasing Effect</h2>
+        <h3 >Components Required : </h3>
+        
+        <ul list="list-style-type:disc;">
+            <li>Arduino UNO Board</li>
+            <li>Breadboard</li>
+            <li>Led (any color) - 6 </li>
+            <li>Resistor (220ohm) - 6 </li>
+            <li>Jumper wires</li>
+          </ul>
+        
+    </div>
+    <br>
+    <h2 class="content" >Circuit Diagram</h2>
+    <div class="border">
+        <image src="images/LED Chaser Light.jpg " alt="LED Chaser light circuit " width="500" height="500" />
+    </div>
+    <br>
+
+    <h2 class="content">Code</h2>
+
+    <p class="h1" >
+        int BASE = 2 ;  // the I/O pin for the first LED <br>
+int NUM = 6;   // number of LEDs<br>
+void setup()<br>
+{<br>
+   for (int i = BASE; i < BASE + NUM; i ++) <br>
+   {<br>
+     pinMode(i, OUTPUT);   // set I/O pins as output<br>
+   }<br>
+}<br>
+void loop()<br>
+{<br>
+   for (int i = BASE; i < BASE + NUM; i ++) <br>
+   {<br>
+     digitalWrite(i, LOW);    // set I/O pins as “low”, turn off LEDs one by one.<br>
+     delay(200);        // delay<br>
+   }<br>
+   for (int i = BASE; i < BASE + NUM; i ++) <br>
+   {<br>
+     digitalWrite(i, HIGH);    // set I/O pins as “high”, turn on LEDs one by one<br>
+     delay(200);        // delay<br>
+   }  <br>
+}
+    </p>
+    <br>
+
+    <div>
+        <h2 class="content">Output/Working</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/S6D8yS-a59Q" title="YouTube video player" 
+        frameborder="0" allow="accelerometer; autoplay;
+         clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <br>
+
+    <!--Html tags for Experiment 4-->
+    <div class="content">
+        <h2><u>Experiment - 4</u></h2>
+        <br>
+        <h2 style="color:crimson">Button Controlled LED</h2>
+        <h3 >Components Required : </h3>
+        
+        <ul list="list-style-type:disc;">
+            <li>Arduino UNO Board</li>
+            <li>Breadboard</li>
+            <li>Led (any color) - 1 </li>
+            <li>Button Switch</li>
+            <li>Resistor (220ohm) - 1 </li>
+            <li>Resistor (10k ohm) -1</li>
+            <li>Jumper wires</li>
+          </ul>
+        
+    </div>
+    <br>
+    <h2 class="content" >Circuit Diagram</h2>
+    <div class="border">
+        <image src="images/Button Led.jpg " alt="Button controlled led circuit diagram " width="500" height="500" />
+    </div>
+    <br>
+
+    <h2 class="content">Code</h2>
+
+    <p class="h1" >
+        int ledpin=11;// initialize pin 11 <br>
+        int inpin=7;// initialize pin 7<br>
+        int val;// define val<br>
+        void setup()<br>
+        {<br>
+        pinMode(ledpin,OUTPUT);// set LED pin as “output”<br>
+        pinMode(inpin,INPUT);// set button pin as “input”<br>
+        }<br>
+        void loop()<br>
+        {<br>
+        val=digitalRead(inpin);// read the level value of pin 7 and assign if to val<br>
+        if(val==LOW)// check if the button is pressed, if yes, turn on the LED<br>
+        { digitalWrite(ledpin,LOW);}<br>
+        else<br>
+        { digitalWrite(ledpin,HIGH);}<br>
+        }<br>
+    </p>
+    <br>
+
+    <div>
+        <h2 class="content">Output/Working</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/55Orxn7fXEA" title="YouTube video player" 
+        frameborder="0" allow="accelerometer;
+         autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <br>
+
+     <!--Html tags for Experiment 5-->
+     <div class="content">
+        <h2><u>Experiment - 5</u></h2>
+        <br>
+        <h2 style="color:crimson">Buzzer</h2>
+        <h3 >Components Required : </h3>
+        
+        <ul list="list-style-type:disc;">
+            <li>Arduino UNO Board</li>
+            <li>Breadboard</li>
+            <li>Buzzer -1 </li>
+            <li>Jumper cables</li>
+            
+          </ul>
+        
+    </div>
+    <br>
+    <h2 class="content" >Circuit Diagram</h2>
+    <div class="border">
+        <image src="images/Buzzeer.jpg " alt="buzzer circuit " width="500" height="500" />
+    </div>
+    <br>
+
+    <h2 class="content">Code</h2>
+
+    <p class="h1" >
+        int buzzer=13;// initialize digital IO pin that controls the buzzer <br>
+void setup() <br>
+{ <br>
+  pinMode(buzzer,OUTPUT);// set pin mode as “output”<br>
+} <br>
+void loop() <br>
+{<br>
+digitalWrite(buzzer, HIGH); // produce sound<br>
+delay(1000);<br>
+digitalWrite(buzzer, LOW);<br>
+delay(500);<br>
+
+}
+    </p>
+    <br>
+
+    <div>
+        <h2 class="content">Output/Working</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/NYKaRvbNG6k"
+         title="YouTube video player" frameborder="0" allow="accelerometer; 
+        autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <br>
+
+    <!--Html tags for Experiment 6-->
+    <div class="content">
+        <h2><u>Experiment - 6</u></h2>
+        <br>
+        <h2 style="color:crimson">RGB LED</h2>
+        <h3 >Components Required : </h3>
+        
+        <ul list="list-style-type:disc;">
+            <li>Arduino UNO Board</li>
+            <li>Breadboard</li>
+            <li>RGB Led  - 1 </li>
+            <li>Resistor (220ohm) - 3 </li>
+            <li>Jumper wires</li>
+          </ul>
+        
+    </div>
+    <br>
+    <h2 class="content" >Circuit Diagram</h2>
+    <div class="border">
+        <image src="images/RGB led.jpg " alt="RGB LED circuit " width="500" height="500" />
+    </div>
+    <br>
+
+    <h2 class="content">Code</h2>
+
+    <p class="h1" >
+        int redpin = 11; //select the pin for the red LED <br>
+        int bluepin =10; // select the pin for the blue LED<br>
+        int greenpin =9;// select the pin for the green LED<br>
+        int val;<br>
+        void setup()<br>
+         {<br>
+          pinMode(redpin, OUTPUT);<br>
+          pinMode(bluepin, OUTPUT);<br>
+          pinMode(greenpin, OUTPUT);<br>
+          Serial.begin(9600);<br>
+        }<br>
+        void loop() <br>
+        {<br>
+        for(val=255; val>0; val--)<br>
+          {<br>
+           analogWrite(11, val);<br>
+           analogWrite(10, 255-val);<br>
+           analogWrite(9, 128-val);<br>
+           delay(1); <br>
+          }<br>
+        for(val=0; val<255; val++)<br>
+          {<br>
+           analogWrite(11, val);<br>
+           analogWrite(10, 255-val);<br>
+           analogWrite(9, 128-val);<br>
+           delay(1); <br>
+          }<br>
+         Serial.println(val, DEC);<br>
+        }<br>
+    </p>
+    <br>
+
+    <div>
+        <h2 class="content">Output/Working</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/sgqF2zFDAWc" title="YouTube video player" 
+        frameborder="0" allow="accelerometer; 
+        autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <br>
+
+
+
+
+
+    
+</body>
+</html>
